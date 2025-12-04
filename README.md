@@ -12,6 +12,8 @@ This resource replaces the default death flow with a **knockout + EMS revive** s
   - Players are knocked out instead of instantly dying when their health drops below a configurable threshold (`hpFallen`).
   - Knocked players are frozen, controls disabled, and a countdown timer starts.
   - If not treated in time, they fully die and lose inventory & money (configurable via existing inventory integration).
+    <img width="1540" height="952" alt="knocked" src="https://github.com/user-attachments/assets/8c2d2358-8fed-4855-af0b-46be3f17a1f9" />
+
 
 - **Cause‑of‑Death Detection**
   - Automatically detects and stores probable cause of injury:
@@ -39,6 +41,8 @@ This resource replaces the default death flow with a **knockout + EMS revive** s
   - Treatment section displays a random sequence of letters (A–G).
   - EMS must click the letters in the correct order for several rounds.
   - Mistakes reset the sequence, success unlocks Revive/Heal buttons.
+    <img width="822" height="562" alt="revive panel" src="https://github.com/user-attachments/assets/bd3c59b8-aa32-412b-91c9-fcdcf0d03edb" />
+
 
 - **Death Menu & EMS Calls**
   - Knocked players get a death menu with:
@@ -51,6 +55,9 @@ This resource replaces the default death flow with a **knockout + EMS revive** s
     - List of active EMS calls
     - EMS‑only chat
   - EMS can pick calls, get blips/markers, and respond.
+<img width="1040" height="634" alt="ems panel" src="https://github.com/user-attachments/assets/b2a3a755-1771-418d-8005-5f5707d5dc94" />
+
+
 
 - **Notifications & UI**
   - All EMS/medical messages use a unified notification system via `add:notification`.
@@ -202,22 +209,6 @@ This resource replaces the default death flow with a **knockout + EMS revive** s
   - **Call EMS**: invokes the EMS call queue, visible in the EMS panel.
   - **New Life**: kills the player after a cooldown and cleans inventory/money via the inventory integration.
 
-### EMS Only
-
-- **`/emstest`**
-  - Debug command for EMS to verify ACL and the revive panel.
-  - Shows:
-    - Test notifications about ACL status.
-    - Health and `playerFallen` state.
-  - Opens the treatment panel on **yourself** for testing.
-
-- **`/revive [partial name or ID]`**
-  - Legacy/simple revive command.
-  - Revives a knocked player nearby without using the treatment panel.
-
-> Note: All EMS‑only commands require the player’s account to be in the ACL group defined by `EMS_ACL_GROUP`.
-
----
 
 ## Configuration
 
@@ -245,31 +236,3 @@ This resource replaces the default death flow with a **knockout + EMS revive** s
 Adjust these values to match your roleplay standards (hardcore vs casual).
 
 ---
-
-## Selling / Packaging Notes
-
-When publishing this script on GitHub or a marketplace:
-
-- Include this `docs/README.md` in your repository.
-- Add screenshots or GIFs of:
-  - Knocked state & on‑screen "needing a cure" icon.
-  - Death menu.
-  - EMS panel.
-  - Revive/treatment panel.
-- Clearly mention:
-  - Required dependencies (inventory, notification system).
-  - Supported MTA version.
-  - That the EMS ACL group is configurable.
-
-You may also add a `LICENSE` file if you want to enforce commercial usage rules.
-
----
-
-## Support & Customization Ideas
-
-- Integrate with faction/job systems to auto‑set EMS duty.
-- Log all revives/heals to a database for admin review.
-- Add more detailed causes (per weapon type or zone of damage).
-- Hook Discord webhooks for EMS call and revive logs.
-
-If you need help customizing this script (UI changes, extra logs, more complex medical logic), you can extend the existing `sGaba.lua`, `cGaba.lua`, and HTML files without touching the core architecture.

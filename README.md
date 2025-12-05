@@ -10,6 +10,14 @@ This resource replaces the default death flow with a **knockout + EMS revive** s
 
 ---
 
+## Addons to make this realistic and playable in RP:
+
+**Drag System to drag player and bring them to hospital and treat them:** https://community.multitheftauto.com/index.php?p=resources&s=details&id=19043
+
+**Food System, so the player dies when he didn't eat properly:** https://community.multitheftauto.com/index.php?p=resources&s=details&id=19042
+
+**Inventory system to complete wipe off inventory when entering a new life (NEW LIFE RP):** https://github.com/sairamkishan300/MTA-SA-INVENTORY-AND-SHOP-SYSTEM
+
 ## Features
 
 - **Knockout System**

@@ -1,6 +1,6 @@
 # Advanced EMS Medical System for MTA:SA
 
-**BUY FROM GUMROAD :** https://saimusick.gumroad.com/l/yvqbad
+**DOWNLOAD FOR FREE FROM GUMROAD :** https://saimusick.gumroad.com/l/yvqbad
 
 **JOIN DISCORD TO BUY:** https://discord.gg/C6yGdAEWEa
 

@@ -2,7 +2,7 @@
 
 **DOWNLOAD FOR FREE FROM GUMROAD :** https://saimusick.gumroad.com/l/yvqbad
 
-**JOIN DISCORD TO BUY:** https://discord.gg/C6yGdAEWEa
+**JOIN DISCORD TO FOR MORE:** https://discord.gg/C6yGdAEWEa
 
 A complete EMS (Emergency Medical Services) system for MTA:SA Roleplay servers, focused on immersive medical RP and EMS gameplay.
 
